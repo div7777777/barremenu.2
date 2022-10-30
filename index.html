@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="body">
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+}
+/* barre menu */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+.sous-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.1);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    background: none;
+}
+.nom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+    color: black;
+    background: none;
+}
+.nom:hover{
+    color: white;
+
+}
+.btn:hover{
+    background: black;
+    border: 14px solid white;
+    transform: scale(1.4, 1.4);
+   }
+
+/* responsive */
+@media screen and (max-width:412px){
+  .btn{
+    width: 70px;
+  }
+  .nom{
+    font-size: 15px;
+  }
+  .btn:hover{
+    width: 95px;
+    transform: scale(1.4, 1.4);
+    border: 12px solid white;
+  }
+  
+}
+</style>
+
+<!-- barre menu -->
+<div class="menu">
+    <div class="sous-menu">
+        <button class="btn">
+            <div class="nom">Menu </div>
+        </button>
+        <button class="btn">
+            <div class="nom">Galerie </div>
+        </button>
+        <button class="btn">
+            <div class="nom">Services </div>
+        </button>
+        <button class="btn">
+            <div class="nom">Contacte </div>
+        </button>
+        <button class="btn">
+            <div class="nom">Aide </div>
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
